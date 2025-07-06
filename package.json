@@ -1,0 +1,66 @@
+{
+  "name": "fullstack-starterkit",
+  "version": "1.0.0",
+  "description": "A comprehensive full-stack starter kit with React, Node.js, TypeScript, Tailwind CSS, and shadcn/ui",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "create-fullstack-app": "bin/create-app.js",
+    "fullstack-starterkit": "bin/create-app.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "templates",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run build",
+    "create-app": "node bin/create-app.js"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "typescript",
+    "tailwind",
+    "shadcn",
+    "fullstack",
+    "starter-kit",
+    "boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epiitom/npm-package.git"
+  },
+  "author": "prathmesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epiitom/npm-package/issues"
+  },
+  "homepage": "https://github.com/epiitom/npm-package#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.0.0",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/inquirer": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
